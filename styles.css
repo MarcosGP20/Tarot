@@ -3,20 +3,31 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f8f8f8;
-  color: #333;
+  background-color: #1d0c30;
+  color: #fff;
 }
 
 .container {
-  max-width: 1200px; /* Ajuste el ancho máximo del contenedor según sus necesidades */
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px; /* Agregué un poco de relleno a los lados del contenedor */
+  padding: 0 20px;
   text-align: center;
+}
+.container1 {
+  max-width: 900px;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  border: 2px solid #8a2be2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #8a2be2, 0 0 20px #8a2be2, 0 0 40px #8a2be2,
+    0 0 60px #8a2be2;
 }
 
 #foto {
-  max-width: 100%; /* Hice que la imagen sea completamente responsiva */
-  height: auto; /* Hice que la altura de la imagen se ajuste automáticamente */
+  max-width: 100%;
+  height: auto;
 }
 
 p {
@@ -24,21 +35,48 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
   text-align: justify;
+  color: #ccc; /* Color de texto gris claro */
 }
 
 header {
-  background-image: url(fondaco.jpg);
+  background-image: url("will-francis-SBUILkqcmsg-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 150px;
-  background-color: #1d0c30;
+  background-color: #3d205f;
   color: #fff;
   padding: 1rem 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+h1,
+h2 {
+  color: rgb(133, 206, 224);
+  font-family: "Arial", sans-serif;
+}
+
+h3 {
+  font-family: "Arial", sans-serif;
+  color: #aaa;
 }
 
 header h1 {
   font-size: 2rem;
-  margin: 0; /* Eliminé el margen inferior del encabezado h1 */
+  margin: 0;
 }
-
+#fotera {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+#dani {
+  height: 350px;
+  border: 2px solid black;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -76,19 +114,20 @@ nav a {
 }
 
 nav a:hover {
-  color: #ff6600;
+  color: #8e75a3;
 }
 
 .hero-section {
-  background-color: #ff6600;
+  background-color: #1d0c30;
   color: #fff;
   text-align: center;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .hero-content {
-  max-width: 600px; /* Limité el ancho máximo del contenido del héroe */
+  max-width: 600px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .hero-content h2 {
@@ -112,11 +151,13 @@ nav a:hover {
 }
 
 .about-section {
-  background-color: #fff;
+  /* background-color: #44309c; */
+  background-color: #362779;
   padding: 80px 0;
 }
 
 .about-section h2 {
+  color: rgb(181, 210, 218);
   text-align: center;
   font-size: 2rem;
   margin-bottom: 40px;
@@ -151,21 +192,6 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #555;
 }
 
 footer {
