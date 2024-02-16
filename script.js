@@ -16,6 +16,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const whatsappBtn = document.getElementById("whatsapp-btn");
+
+  whatsappBtn.addEventListener("click", function () {
+    const phoneNumber = "543517962346";
+    const message = "Hola, quiero una consulta gratuita.";
+
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappLink, "_blank");
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const whatsappBtn = document.getElementById("whatsapp-btn2");
+
   whatsappBtn.addEventListener("click", function () {
     const phoneNumber = "543517962346";
     const message = "Hola, quiero una consulta gratuita.";

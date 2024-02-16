@@ -13,6 +13,13 @@ body {
   padding: 0 20px;
   text-align: center;
 }
+.container h1 {
+  color: rgb(237, 231, 252);
+}
+#danititulo {
+  color: rgb(237, 231, 252);
+  font-family: Robototo;
+}
 .container1 {
   max-width: 900px;
   background-color: rgba(0, 0, 0, 0.9);
@@ -199,9 +206,52 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem 0;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   bottom: 0;
+}
+#consulta {
+  display: flex;
+  flex-direction: column; /* Alinear los elementos en una columna */
+  align-items: center;
+}
+#consulta h2 {
+  font-family: "Arial", sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #d8d8d8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
+}
+#contacto h2 {
+  color: #e0e0e0;
+}
+#contacto h3 {
+  color: #f3f3f3;
+  font-size: 1.5rem;
+}
+#whatsapp-btn2 {
+  transition: transform 0.3s, filter 0.3s;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#whatsapp-btn2:hover {
+  filter: brightness(100%);
+  transform: scale(1.1);
+}
+#logaso {
+  width: 160px;
+  height: auto;
+  image-rendering: crisp-edges;
+  object-fit: contain;
+  transition: transform 0.3s, filter 0.3s;
+}
+#logaso:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
