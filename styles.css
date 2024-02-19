@@ -155,6 +155,23 @@ nav a:hover {
   font-size: 2rem;
   margin-bottom: 40px;
 }
+@keyframes moveText {
+  0% {
+    transform: translateY(-10px); /* Inicio: desplazamiento hacia arriba */
+  }
+  50% {
+    transform: translateY(10px); /* Mitad: desplazamiento hacia abajo */
+  }
+  100% {
+    transform: translateY(-10px); /* Final: desplazamiento hacia arriba */
+  }
+}
+#pago h3 {
+  text-align: center;
+  color: rgb(245, 245, 234);
+  font-size: 2rem;
+  animation: moveText 2s ease-in-out infinite;
+}
 
 .about-section {
   /* background-color: #44309c; */
