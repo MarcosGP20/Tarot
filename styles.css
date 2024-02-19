@@ -80,10 +80,7 @@ header h1 {
   display: block;
   margin: 0 auto;
 }
-#dani {
-  height: 350px;
-  border: 2px solid black;
-}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -161,6 +158,9 @@ nav a:hover {
   /* background-color: #44309c; */
   background-color: #362779;
   padding: 80px 0;
+  display: flex;
+  flex-direction: column; /* Para que los elementos dentro del contenedor se apilen verticalmente */
+  align-items: center;
 }
 
 .about-section h2 {
@@ -169,7 +169,16 @@ nav a:hover {
   font-size: 2rem;
   margin-bottom: 40px;
 }
-
+#dani {
+  /* height: 350px;*/
+  border: 2px solid black;
+  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+  max-width: 400px; /* Ancho máximo de la imagen */
+  height: auto; /* Altura automática para mantener la proporción de aspecto */
+  display: inline-block; /* Asegura que la imagen se muestre correctamente */
+  margin-top: 20px;
+  align-items: center;
+}
 .contact-section {
   padding: 80px 0;
 }
@@ -178,27 +187,6 @@ nav a:hover {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 40px;
-}
-
-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
 }
 
 footer {
