@@ -48,11 +48,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.addEventListener("click", function (event) {
     if (!navList.contains(event.target) && event.target !== menuToggle) {
-      navList.classList.remove("active");
+      navList.style.display = "none"; // Ocultar la lista de navegación cuando se hace clic fuera de ella
     }
   });
 
   menuToggle.addEventListener("click", function () {
-    navList.classList.toggle("active");
+    if (navList.style.display === "none") {
+      navList.style.display = "block"; // Mostrar la lista de navegación cuando se hace clic en el botón de menú
+    } else {
+      navList.style.display = "none"; // Ocultar la lista de navegación si ya está visible y se hace clic en el botón de menú nuevamente
+    }
   });
 });
