@@ -42,3 +42,17 @@ document.addEventListener("DOMContentLoaded", function () {
     window.open(whatsappLink, "_blank");
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("mobile-menu");
+  const navList = document.querySelector(".nav-list");
+
+  document.addEventListener("click", function (event) {
+    if (!navList.contains(event.target) && event.target !== menuToggle) {
+      navList.classList.remove("active");
+    }
+  });
+
+  menuToggle.addEventListener("click", function () {
+    navList.classList.toggle("active");
+  });
+});
