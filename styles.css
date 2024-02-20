@@ -73,16 +73,22 @@ header h1 {
   font-size: 2rem;
   margin: 0;
 }
-#fotera {
-  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
-  max-width: 400px; /* Ancho máximo de la imagen */
+.fotera-comun {
+  width: 100%;
   height: auto;
   border-radius: 10px;
   display: inline-block;
   margin: 0 auto;
   align-items: center;
 }
+.uno {
+  max-width: 570px;
+  margin-bottom: 20px;
+}
 
+.dos {
+  max-width: 400px;
+}
 nav {
   display: block;
   justify-content: space-between;
