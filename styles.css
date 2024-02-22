@@ -6,7 +6,7 @@ body {
   background-color: #1d0c30;
   color: #fff;
 }
-
+/* CONTAINER GENERALES (MENOS EL PRIMERO) */
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -20,6 +20,8 @@ body {
   color: rgb(237, 231, 252);
   font-family: Robototo;
 }
+
+/* CONTAINER DE BIENVENIDA */
 .container1 {
   max-width: 900px;
   background-color: rgba(0, 0, 0, 0.9);
@@ -30,11 +32,6 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px #8a2be2, 0 0 20px #8a2be2, 0 0 40px #8a2be2,
     0 0 60px #8a2be2;
-}
-
-#foto {
-  max-width: 100%;
-  height: auto;
 }
 
 p {
@@ -58,6 +55,10 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
 }
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
 h1,
 h2 {
   color: rgb(133, 206, 224);
@@ -69,10 +70,6 @@ h3 {
   color: #aaa;
 }
 
-header h1 {
-  font-size: 2rem;
-  margin: 0;
-}
 .fotera-comun {
   width: 100%;
   height: auto;
@@ -94,7 +91,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
+/* MENU MOBILE (BORRAR QUIZAS) */
 .menu-toggle {
   display: none;
   cursor: pointer;
@@ -161,6 +158,8 @@ nav a:hover {
   font-size: 2rem;
   margin-bottom: 40px;
 }
+
+/* ANIMACION MOVIMIENTO */
 @keyframes moveText {
   0% {
     transform: translateY(-10px); /* Inicio: desplazamiento hacia arriba */
@@ -180,11 +179,10 @@ nav a:hover {
 }
 
 .about-section {
-  /* background-color: #44309c; */
   background-color: #362779;
   padding: 80px 0;
   display: flex;
-  flex-direction: column; /* Para que los elementos dentro del contenedor se apilen verticalmente */
+  flex-direction: column;
   align-items: center;
 }
 
@@ -195,12 +193,11 @@ nav a:hover {
   margin-bottom: 40px;
 }
 #dani {
-  /* height: 350px;*/
   border: 4px groove black;
-  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
-  max-width: 400px; /* Ancho máximo de la imagen */
-  height: auto; /* Altura automática para mantener la proporción de aspecto */
-  display: inline-block; /* Asegura que la imagen se muestre correctamente */
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: inline-block;
   margin-top: 20px;
   align-items: center;
 }
@@ -219,13 +216,12 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem 0;
-  /* position: fixed; */
   width: 100%;
   bottom: 0;
 }
 #consulta {
   display: flex;
-  flex-direction: column; /* Alinear los elementos en una columna */
+  flex-direction: column;
   align-items: center;
 }
 #consulta h2 {
@@ -272,63 +268,58 @@ footer {
   padding: 0;
   cursor: pointer;
 }
-
+/* AREA RESPONSIVE */
 @media (max-width: 768px) {
-  /* Estilos para pantallas más pequeñas, como dispositivos móviles */
-
-  /* Ajustes para el encabezado */
   header {
-    height: 100px; /* Ajustar la altura del encabezado en dispositivos móviles */
-  }
+    height: 100px;
 
-  header h1 {
-    font-size: 1.5rem;
-    margin: 0; /* Ajustar los márgenes del título */
-  }
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
 
-  /* Ajustes para el menú de navegación */
-  .menu-toggle {
-    display: block;
-  }
+    .menu-toggle {
+      display: block;
+    }
 
-  .nav-list {
-    display: none;
-    text-align: center;
-    background-color: #333;
-    position: absolute;
-    top: 100px; /* Ajustar la posición del menú desplegable */
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
+    .nav-list {
+      display: none;
+      text-align: center;
+      background-color: #333;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
 
-  .nav-list.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    .nav-list.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  .nav-list li {
-    margin: 10px 0;
-  }
+    .nav-list li {
+      margin: 10px 0;
+    }
 
-  /* Ajustes para las secciones */
-  .section {
-    padding: 40px 0; /* Reducir el relleno de las secciones en dispositivos móviles */
-  }
+    .section {
+      padding: 40px 0;
+    }
 
-  .hero-content h2,
-  .readings-section h2,
-  .about-section h2,
-  .contact-section h2 {
-    font-size: 1.5rem; /* Reducir el tamaño de los encabezados en dispositivos móviles */
-    margin-bottom: 20px; /* Ajustar el margen inferior de los encabezados */
-  }
+    .hero-content h2,
+    .readings-section h2,
+    .about-section h2,
+    .contact-section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
 
-  .hero-content p,
-  .readings-section p,
-  .about-section p,
-  .contact-section p {
-    font-size: 1rem; /* Reducir el tamaño del texto en dispositivos móviles */
+      .hero-content p,
+      .readings-section p,
+      .about-section p,
+      .contact-section p {
+        font-size: 1rem;
+      }
+    }
   }
 }
