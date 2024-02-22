@@ -196,7 +196,7 @@ nav a:hover {
 }
 #dani {
   /* height: 350px;*/
-  border: 2px solid black;
+  border: 4px groove black;
   width: 100%; /* La imagen ocupará todo el ancho del contenedor */
   max-width: 400px; /* Ancho máximo de la imagen */
   height: auto; /* Altura automática para mantener la proporción de aspecto */
